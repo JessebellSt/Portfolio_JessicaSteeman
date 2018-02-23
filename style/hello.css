@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,500');
+
+body {
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------------- 
+   Mobile_first
+-----------------------------------------------------*/
+
+.bgimage {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: 20% 80%;
+    height: 100vh;
+    
+}
+
+/* -------------------------------------------------- 
+   Header_Mobile
+-----------------------------------------------------*/
+
+.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+}
+
+.inactive {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.active {
+    min-height: 100vh;
+    background-color: #45546A;
+    transition: max-height 0.2s;
+}
+
+.menutoggle {
+    margin-right: 0.5em;
+    margin-top: 0.2em;
+    font-size: 2em;
+    max-width: 25%;
+    float: right;
+    display: block;
+}
+
+
+.menutoggle a {
+	color: #000000;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    z-index: 10;
+}
+
+
+nav ul, nav li {
+    padding: 2em;
+	list-style: none;
+	min-height: 0;
+}
+
+
+nav li {
+    border-bottom: 1px solid #FFFFFF;
+    text-align: center;
+}
+nav ul li a:not(.button) {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+	color: #FFFFFF;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 1em;
+}
+/* -------------------------------------------------- 
+   Main_Mobile
+-----------------------------------------------------*/
+
+main {
+    margin-top: 80px;
+}
+
+.slogan {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #45546A;
+    letter-spacing: 7px;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+h1 {
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #45546A;
+    
+}
+
+.typewrite {
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.typewrite:hover {
+    background-color: transparent;
+}
+
+
+/* -------------------------------------------------- 
+   Tablet
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 600px){
+    
+    .bgimage{
+        background-size: cover;
+        background-position: 70% bottom;
+        height: 100vh;
+    }
+    
+    /* -------------------------------------------------- 
+   Header_Tablet
+-----------------------------------------------------*/
+
+    .logo {
+        width: 125px;
+        height: 125px;
+        float: left;
+        margin-left: 10px;
+    }
+    
+    .menutoggle {
+        display: none;
+    }
+
+    .inactive, .active{
+		max-height: initial;
+	}
+    
+    nav {
+        text-align: right;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        color: 
+    }
+    
+    nav ul, nav li {
+        list-style: none;
+        display: inline;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #45546A;
+        
+    }
+    
+    a {
+        display: block
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: #45546A;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        background-color: #45546A; 
+    }
+    
+    nav ul li a:not(.button) {
+        color: #45546A;
+    }
+    
+    nav ul li a:not(.button):hover {
+        color: #ffffff;
+    }
+    
+}
+
+/* -------------------------------------------------- 
+   Dekstop
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 900px){
+    
+    .bgimage{
+        background-size: cover;
+        background-position: 80% 80%;
+        height: 100vh;
+    }
+    
+    /* -------------------------------------------------- 
+   Header_Desktop
+-----------------------------------------------------*/
+    
+     nav {
+        text-align: right;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        color: 
+    }
+    
+    nav ul, nav li {
+        list-style: none;
+        display: inline;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #45546A;
+        
+    }
+    
+    a {
+        display: block
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: #45546A;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        background-color: #45546A; 
+    }
+    
+    nav ul li a:not(.button) {
+        color: #45546A;
+    }
+    
+    nav ul li a:not(.button):hover {
+        color: #ffffff;
+    }
+    
+    
+/* -------------------------------------------------- 
+   Main_Desktop
+-----------------------------------------------------*/  
+    .slogan {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: #45546A;
+        letter-spacing: 7px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #45546A;
+    }
+
+    .typewrite {
+        padding: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 7px;
+    }
+    
+    .typewrite:hover {
+        background-color: transparent;
+    }
+    
+}
